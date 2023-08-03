@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Portafolio de Iván</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
+  <header>
+    <div class="container">
+      <h1>Iván Silveira</h1>
+      <nav>
+        <ul>
+          <li><a href="#proyectos">Arquitectura</a></li>
+          <li><a href="#fotografia">Fotografía</a></li>
+          <li><a href="#audiovisual">Audiovisual</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="proyectos">
+    <div class="container">
+      <h2>Proyectos de arquitectura</h2>
+      <div class="proyectos">
+        <img src="orion.jpg" alt="Orion">
+        <h3>Intervención en plaza Zabala: ORION</h3>
+        <p>Construcción de andamios multidireccionales envueltos en tela blanca</p>
+      </div>
+
+      <div class="proyectos">
+        <img src="blanes.jpg" alt="Blanes">
+        <h3>Anexo para Museo Blanes</h3>
+        <p>Anexo que incluye una sala de exposición intinerante además de un café y otros servicios</p>
+      </div>
+
+      <div class="proyectos">
+        <img src="PEA.jpg" alt="PEA">
+        <h3>Proyecto sustentable en Cordón</h3>
+        <p>Edificio polifuncional con cubierta verde con varios elementos de sustentabilidad ambiental</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotografia">
+    <div class="container">
+      <h2>Fotografía</h2>
+      <div class="proyectos">
+        <img src="F1.jpg" alt="Fotografía de arquitectura">
+        <h3>Fotografía de arquitectura</h3>
+        <p>Inmobiliarias, salones de fiesta y chacras</p>
+      </div>
+
+      <div class="proyectos">
+        <img src="F2.jpg" alt="Naturaleza">
+        <h3>Fotografía de naturaleza</h3>
+        <p>Orientada a paisajes, flora y fauna</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="audiovisual">
+    <div class="container">
+      <h2>Audiovisual</h2>
+      <div class="proyectos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yglpwCWVJes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <p>Dirección, producción y animación</p>
+      </div>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form action="enviar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+  </section>
 </body>
 </html>
+
